@@ -1,6 +1,5 @@
 __author__ = 'sayon'
 
-import numpy as np
 import cv2
 
 GAUSSIAN_SIZE = 3
