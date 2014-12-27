@@ -42,7 +42,8 @@ if not (imgs['original'] is None):
 
     for x in xrange(0, w):
         for y in xrange(0, h):
-            if bw[y][x] == 255:
+            if bw[y][x] == 255\
+                    :
                 v, rect = cv2.floodFill(bw, None, seedPoint = (x, y), newVal = (100, 100, 100))
                 print v, " ",  rect
                 cv2.rectangle(imgs['rects'], rect[:2], (rect[0] + rect[2], rect[1] + rect[3]), 1000)
